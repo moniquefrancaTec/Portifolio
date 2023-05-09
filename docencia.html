@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Docência</title>
+   <style>
+    /* Capa inicial */
+    
+    .capa{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content:space-around;
+        background-color: #ffe4c4;
+        padding: 67px;
+        border-bottom: #2F2325 2px solid;
+        flex-wrap: wrap;
+    }
+
+    #text-titulo{
+        animation: typing 4s 1s normal infinite;
+        padding: 0;
+        margin-bottom: 0px;
+        border-radius: 0px;
+        font-size: 32px;
+        color:rgb(9, 9, 9);
+        align-items: center;
+        font-family: verdana, cursive;
+        white-space: nowrap;
+        overflow: hidden;
+   
+    }
+   @keyframes typing{
+        from{
+            width: 0;
+        }
+        to{
+            width: 25em;
+        }
+    }
+    #text-titulo span::after {
+        content: '|';
+        margin-left: 3px;
+        opacity: 1;
+        animation: pisca .7s infinite;
+    }
+    @keyframes pisca {
+        0%, 100% {
+        opacity: 1;
+        }
+        50% {
+        opacity: 0;
+        }
+    }
+
+    #imgCapa{
+        border-radius: 310px;
+    }
+
+    h1 span {
+        font-size: 44px;
+        color:#FF3E89;
+        font-weight: 600;
+    }
+    #sub-text{
+        animation: typing 4s 1s normal ;
+        align-items: center;
+        font-family: verdana, cursive;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    #sub-text span{
+        color:#FF3E89;
+        align-items: center;
+        font-size: 44px;
+    
+    }
+    body{
+        background-color: black;
+    }
+    .box{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color:floralwhite;
+    margin: 10px;
+   }
+   .box h2{
+    font-size: 32px;
+    margin: 50px;
+   }
+
+   .box p{
+    text-align: justify;
+    margin: 50px;
+    margin-top: 30px;
+    font-size: 26px;
+    line-height: 35px;
+   }
+   video{
+    border: #2F2325 solid 2px;
+   }
+   .box2{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color:floralwhite;
+    margin: 10px;
+   }
+   .box2 h2{
+    font-size: 32px;
+    margin: 50px;
+   }
+
+   .box2 p{
+    text-align: justify;
+    margin: 50px;
+    margin-top: 30px;
+    font-size: 26px;
+    line-height: 35px;
+   }
+
+   #subir{
+    cursor: pointer;
+    position: fixed;
+    justify-content: space-around;
+    bottom: 10px;
+    left: 1;
+    right: 0;
+    background-color: aliceblue;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 33px;
+    margin: 0px 10px;
+    border: black 2px solid;
+    color: black;
+   }
+</style>
+</head>
+<body>
+    
+    <section class="capa">
+        <img id="imgCapa" src="imagem/logo1.svg">
+        <div>
+            <h1 id="text-titulo" class="typing-animation">Olá, sou <span> MONIQUE FRANÇA!</span></h1>
+            <br>
+            <h2 id="sub-text" class="typing-animation"> Bem-vindo ao mundo mágico da <br> <span> Física e Computação </span></h2>
+        </div>
+
+    </section>
+    <section class="box">
+        <div>
+            <h2> 1 Lei de Newton</h2>
+            <video  controls="controls" width="800" height="550"><source src="videos/1leidenewton.mp4" type="video/mp4"></video>
+            <p>“Todo corpo persiste em seu estado de repouso, ou movimento retilíneo uniforme, a menos que seja compilado a modificar esse estado pela ação de forças impressas sobre ele.”</p>
+        </div>
+        <div>
+            <h2> 2 Lei de Newton</h2>
+            <video  controls="controls" width="800" height="550"><source src="videos/2leidenewton.mp4" type="video/mp4"></video>
+            <p>““A quantidade de movimento é a medida do mesmo, que o origina em conjunto da velocidade e da massa”..”</p>
+        </div>
+    </section>
+    <section class="box2">
+        <h2>Ondas</h2>
+        <p>Ondas eletromagnéticas são oscilações formadas por campos elétricos e magnéticos variáveis, que se propagam tanto no vácuo quanto em meios materiais. Elas são ondas tridimensionais e transversais que viajam na velocidade da luz, transportando exclusivamente energia.</p>
+        <div class="box3">
+        <video  controls="controls" width="500" height="550"><source src="videos/ondas.mp4" type="video/mp4"></video>
+        <video  controls="controls" width=500" height="550"><source src="videos/ondaseletro.mp4" type="video/mp4"></video>
+        <video  controls="controls" width="500" height="550"><source src="videos/princípios.mp4" type="video/mp4"></video>
+    </div>
+    </section>
+    <a href="#" id="subir">&uarr;</a>
+</body>
+</html>

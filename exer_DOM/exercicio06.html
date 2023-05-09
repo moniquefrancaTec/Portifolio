@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IDADE</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-image: url(imagem/IDADE-1.png);
+        }
+        .pai{
+            height: 100vh;
+            text-align: center;
+        }
+        .box{
+            justify-content: center;
+            margin-top: 50px;
+        }
+        
+        h1{
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        form{
+           justify-content: center;
+           align-items: center;
+           border-radius: 10px;
+           padding: 20px;
+           margin-bottom: 15px;
+        }
+        label{
+            font-family: 'Arial';
+            font-weight: 700;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        form input{
+      
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 5px;
+            border: 1px solid #999;
+            outline: none;
+            font-size: 16px;
+            align-items: center;
+        }
+        form input:focus{
+            border: 2px solid #1877f2;
+        }
+        button
+        {
+            background-color: #f1ecf1;
+            padding: 10px;
+            text-align: center;
+            align-items: center;
+            text-decoration: none;
+            width: 10%;
+            justify-items: center;
+            border-radius: 20px;
+            color: rgb(15, 15, 15);
+            font-family: 'Arial';
+            font-weight: 700;
+            transition: 0.5s;
+        }
+        p{
+            background-color:  rgb(245, 244, 243);
+            font-family: 'Arial';
+            color: black;
+            font-weight: 700;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <section class="pai">
+    <section class="box">
+    <h1>Cálculo da IDADE</h1>
+       
+        <form>
+            <div>
+            <label>Nome:</label>
+            <input type="text" id="nome">
+            </div>
+            <div id="sexo">
+            <label  >Sexo:</label><!--caixa de seleção de opções-->
+            <input type="radio" name="sexo" value="Feminino" id="fem" >Feminino
+            <input type="radio" name="sexo" value="Masculino" id="masc" >Masculino
+            </div>
+            <div>
+            <label> Ano de Nascimento:</label>
+            <input type="number" id="anoNasc">
+            </div>
+        </form>
+        <button  onclick="idade()" id="calcular">Calcular</button>
+        </section><br>
+        <p id ="resultado"></p><br>
+        <img src="#" alt="" id="img">
+        <br>
+    
+</section>
+</body>
+    <script>
+        function idade(){
+            var nome = String(window.document.getElementById('nome').value)
+            var anoNasc = Number (window.document.getElementById('anoNasc').value)
+            var agora = new Date()
+            var anoAgora = agora.getFullYear()
+            var idade = anoAgora - anoNasc        
+
+            if (anoNasc<0){
+                window.alert(`Não existe ano negativo! Digite um novo valor!`)
+
+            }
+            if (anoAgora< anoNasc){
+                window.alert(`O ano de nascimento não pode ser superior ao ano de agora!`)
+            }
+            if (anoNasc == ""){
+                window.alert(`Digite um ano para a idade ser calculada`)
+
+            }
+
+            if (anoNasc>=0 && anoAgora>= anoNasc ){
+                 if (document.getElementById('fem').checked) { 
+                    if (idade <= 2){
+                        resultado.innerHTML = `${nome} tem ${idade} anos !`
+                        img.src="imagem/baby-fem.png"
+                    } else if (idade > 2 && idade<=10){
+                        resultado.innerHTML = `${nome} tem ${idade} anos !`
+                        img.src="imagem/crianca-menina.png"
+                    } else if (idade >= 11 && idade<=17){
+                        resultado.innerHTML = `${nome} tem ${idade} anos !`
+                        img.src = "imagem/adolescente-menina.png"
+                    } else if (idade >= 18 && idade<=59){
+                        resultado.innerHTML = `${nome} tem ${idade} anos !`
+                        img.src = "imagem/mulher-adulta.png"
+                    } else if (idade >= 60 ){
+                        resultado.innerHTML = `${nome} tem ${idade} anos !`
+                        img.src = "imagem/idosa-fem.png"
+                    } 
+            }  else if (document.getElementById('masc').checked) { 
+                    if (idade <= 2){
+                        resultado.innerHTML = `${nome} tem ${idade} anos !`
+                        img.src="imagem/baby-mas.png"
+                    } else if (idade > 2 && idade<=10){
+                        resultado.innerHTML = `${nome} tem ${idade} anos !`
+                        img.src="imagem/crianca-menino.png"
+                    } else if (idade >= 11 && idade<=17){
+                        resultado.innerHTML = `${nome} tem ${idade} anos !`
+                        img.src = "imagem/adolescente-menino.png"
+                    } else if (idade >= 18 && idade<=59){
+                        resultado.innerHTML = `${nome} tem ${idade} anos !`
+                        img.src = "imagem/homem-adulto.png"
+                    } else if (idade >= 60 ){
+                        resultado.innerHTML = `${nome} tem ${idade} anos !`
+                        img.src = "imagem/idoso-mas.png"
+                    } 
+            }
+            
+            
+        }
+    }
+    </script>
+</html>

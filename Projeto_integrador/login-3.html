@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login ou cadastrar</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            background-color: #FFFFF;
+         
+        }
+        .blocoprincipal{
+            background-color:#FFE6E6;
+            box-shadow:0  20px  30px  0  rgba( 0 , 0 , 0 , 0.2 ),  0  15px  40px  0  rgba( 0 , 0 , 0 , 0.19 );
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            border-radius: 20%;
+            margin: 60px;
+            text-align: center;
+            flex-wrap: wrap;          
+        }
+        form{
+            display: flex;
+           align-content: center;
+           justify-content: center;
+           flex-direction: column;
+           width: 500px;
+           align-items: center;
+           border-radius: 10px;
+           padding: 10px;
+           padding-top: 1px;
+           margin-bottom: 25px;
+           margin: 0px 30px 30px 30px;
+           float: center;
+        }
+        form input{
+            width: 80%;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #999;
+            outline: none;
+            font-size: 16px;
+            display: flex;
+           align-content: center;
+           justify-content: center;
+        }
+        form input:focus{
+            border: 2px solid #D2738D;
+        }
+        .login{
+            background-color: #D2738D;
+            padding: 15px;
+            text-align: center;
+            text-decoration: none;
+            width: 50%;
+            border-radius: 50px;
+            color: white;
+            font-family: 'Arial';
+            font-weight: 700;
+            transition: 0.5s;
+        }
+        .login:hover{
+            background-color:#FF914D;
+        }
+        .esqueceu{
+            margin: 15px 0;
+            text-decoration: none;
+            color:black;
+            font-family: 'Arial';
+            font-size: 14px;
+        }
+        .novaconta{
+            margin: 15px 0;
+            text-decoration: none;
+            color:black;
+            font-family: 'Arial';
+            font-size: 14px;
+        }
+        #logo{
+            border-radius: 30%;
+            width: 75%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-left: 30px;
+            margin:30px ;
+            float: center;
+        }
+        
+        @media(max-width:500px){
+        form{
+        width: 350px;
+        align-content:center ;
+        align-items: center;
+    }
+}
+    </style>
+</head>
+<body>
+    <section class="blocoprincipal"> <!--Container principal-->
+           <img src="imagem/logo4.png" alt="logo" id="logo">
+           <form action="">
+               <input type="text" placeholder="Email ou telefone">
+               <input type="password" placeholder="Senha">
+               <a class="login" href="">Entrar</a>
+               <a class="esqueceu"href="">Esqueceu a senha?</a>
+               <section>
+                   <a class="novaconta" href="">Criar nova conta</a>
+               </section>
+            </form>
+        </section>
+       </section>
+   </body>
+   </html>

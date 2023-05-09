@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Média do Aluno</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-image: url(imagem/fundo1.png);
+        }
+        .box{
+           display: flex;
+           flex-flow: column wrap;
+           align-content: center;
+           justify-content: center;
+        
+        }
+        h1{
+            color:white;
+            margin-bottom: 10px;
+        }
+        form{
+           background-color:black;
+           justify-content: center;
+           flex-direction: column;
+           width: 500px;
+           align-items: center;
+           border-radius: 10px;
+           padding: 20px;
+           margin-bottom: 25px;
+           text-align: center;
+           margin-top: 50px;
+        }
+        label{
+            font-family: 'Arial';
+            font-weight: 700;
+            color: aliceblue;
+        }
+        form input{
+            width: 80%;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #999;
+            outline: none;
+            font-size: 16px;
+        }
+        form input:focus{
+            border: 2px solid #1877f2;
+        }
+        button
+        {
+            background-color: #f1ecf1;
+            padding: 10px;
+            text-align: center;
+            text-decoration: none;
+            width: 10%;
+            justify-items: center;
+            border-radius: 20px;
+            color: rgb(15, 15, 15);
+            font-family: 'Arial';
+            font-weight: 700;
+            transition: 0.5s;
+            justify-content: center;
+            margin-left: 200px;
+        }
+        p{
+            background-color: rgb(20, 20, 20);
+            font-family: 'Arial';
+            font-weight: 700;
+            font-size: 25px;
+            margin-top: 10px;
+            justify-content: center;
+            text-justify: center;
+        }
+    </style>
+</head>
+<body>
+   
+    <section class="box">
+        <div>
+        <form>
+            <h1>Calcular a média das provas dos alunos</h1>
+            <div>
+                <label> Nome do aluno: </label>
+                <input type="text" id="nome">
+            </div>
+            <div>
+                <label> Nota Prova 1: </label>
+                <input type="number" id="prova1">
+            </div>
+            <div>
+                <label> Nota Prova 2: </label>
+                <input type="number" id="prova2">
+            </div>
+            <div>
+                <label> Nota Prova 3: </label>
+                <input type="number" id="prova3">
+            </div>
+        </form>
+    </div>
+        <button onclick="calcular()" id="calular">Calular</button>
+        <p id="resultado"></p>
+        <img src="#" alt="" id="img">
+    </section>
+</body>
+    <script>
+        function calcular(){
+        var nome = String(window.document.getElementById('nome').value)
+        var prova1 = Number(window.document.getElementById('prova1').value)
+        var prova2 = Number(window.document.getElementById('prova2').value)
+        var prova3 = Number (window.document.getElementById('prova3').value)
+        var media = (prova1 + prova2 + prova3)/3
+        var nmedia = media.toFixed (0)
+
+        if (prova1<0 || prova2<0 || prova3<0){
+            window.alert(`Não pode ter nota negativa!! Insira outro valor`)
+            
+        } else if (prova1>10 || prova2> 10 || prova3> 10) {
+                window.alert(`Não pode ter nota maiores que 10 pontos!! Insira outro valor`)
+            } else if (nmedia<= 3) {
+                resultado.innerHTML = ` A nota média de ${nome} é ${nmedia} e está reprovado.`
+                resultado.style.color ='red'
+            } else if (nmedia >= 4 && nmedia <6) {
+                resultado.innerHTML = ` A nota média de ${nome} é ${nmedia} e está recuperação.`
+                resultado.style.color ='green'
+            } else if (nmedia >=6) {
+                resultado.innerHTML = ` A nota média de ${nome} é ${nmedia} e está Aprovado.`
+                resultado.style.color ='blue'
+            }  
+        } 
+        
+            
+        
+
+        
+    </script>
+</html>

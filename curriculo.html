@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/estilo.css">
+    <title>Curriculo</title>
+
+<style>
+     @import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-size: 100%;
+   background-color:  #ffe4c4;
+}
+/* Cabeçalho*/
+
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 24px;
+    background: linear-gradient(68.15deg, #2F2325 16.62%, #8E5D52 85.61%);
+    flex-wrap: wrap;
+
+}
+.cabecalho:hover {
+    background: #2F2325;
+    transition: .5s;
+} 
+.cabecalho-imagem {
+    height: 72px;
+    border-radius: 50px;
+    
+}
+.cabecalho-menu {
+    display: flex;
+    gap: 32px;
+
+}
+
+.cabecalho-menu-item {
+   font-family: 'Sarala', sans-serif;
+   color: #FFF2E7;
+   font-weight: 400;
+   font-size: 23px
+}
+.cabecalho-menu-item:hover{
+    background: linear-gradient(68.15deg, #2F2325 16.62%, #8E5D52 85.61%);;
+    color:#FFF2E7;
+    transition: .5s;
+}
+
+/* Capa inicial */
+
+.capa{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content:space-around;
+    background-color: #ffe4c4;
+    padding: 25px;
+    flex-wrap: wrap;
+}
+
+#text-titulo{
+    animation: typing 4s 1s normal;
+    padding: 0;
+    margin-bottom: 0px;
+    border-radius: 0px;
+    font-size: 32px;
+    color:rgb(9, 9, 9);
+    align-items: center;
+    font-family: verdana, cursive;
+    white-space: nowrap;
+    overflow: hidden;
+
+}
+@keyframes typing{
+    from{
+        width: 0;
+    }
+    to{
+        width: 25em;
+    }
+}
+#text-titulo span::after {
+    content: '|';
+    margin-left: 3px;
+    opacity: 1;
+    animation: pisca .7s infinite;
+}
+@keyframes pisca {
+    0%, 100% {
+    opacity: 1;
+    }
+    50% {
+    opacity: 0;
+    }
+}
+
+#imgCapa{
+    border-radius: 310px;
+    width: 150px;
+}
+
+/* curruculo*/
+
+    .breveap{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin: 2px;
+        padding: 10px;
+        width: 100%;
+        height: 100%;
+    }
+    .breveap h2{
+        font-style: italic;
+        font-family:  sans-serif;
+        text-align: center;
+    }
+
+    #fotoeu{
+        display: flex;
+        border-radius: 50%;
+        width: 70%;
+        justify-content: center;
+        align-items: center;
+        border: solid 1px #FCE9F3;
+        margin-top: 30px;
+    }
+
+    .breveap p{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family:  Arial;
+        border: #FCE9F3 outset 2px;
+        background-color: #ffffff;
+        box-shadow:0  4px  8px  0  rgba( 0 , 0 , 0 , 0.2 ),  0  6px  20px  0  rgba( 0 , 0 , 0 , 0.19 );
+        margin-top: 30px;
+        line-height: 23px;
+    }
+
+    .academica{
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .academica aside{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border: #FCE9F3 outset 2px;
+        background-color: #ffffff;
+        box-shadow:0  4px  8px  0  rgba( 0 , 0 , 0 , 0.2 ),  0  6px  20px  0  rgba( 0 , 0 , 0 , 0.19 );
+        margin: 30px;
+        flex-wrap: wrap;
+    }
+     h2{
+        font-style: italic;
+        font-family:  sans-serif;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin: 30px;
+    }
+    #formaeb{
+        width: 70%;
+        height: 70%;
+        justify-content: space-around;
+        display: flex;
+        align-items: center;
+        margin: 20px;
+    }
+    #fotoformatura2{
+        justify-content: space-around;
+        display: flex;
+        align-items: center;
+        margin: 20px;
+        border: solid 1px #FCE9F3;
+    }
+    #formatura1{
+        justify-content: space-around;
+        display: flex;
+        align-items: center;
+        margin: 20px;
+        border: solid 1px #FCE9F3;
+    }
+
+    #pos{
+        width: 20%;
+        height: 20%;
+        justify-content: space-around;
+        display: flex;
+        align-items: center;
+        margin: 20px;
+    }
+
+    #acade{
+        width: 20%;
+        height: 20%;
+        justify-content: space-around;
+        display: flex;
+        align-items: center;
+        margin: 20px;
+    }
+
+    .experiencia aside{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border: #FCE9F3 outset 2px;
+        background-color: #ffffff;
+        box-shadow:0  4px  8px  0  rgba( 0 , 0 , 0 , 0.2 ),  0  6px  20px  0  rgba( 0 , 0 , 0 , 0.19 );
+        margin: 30px;
+        flex-wrap: wrap;
+    }
+
+    #professora{
+        width: 90%;
+        height: 90%;
+        justify-content: space-around;
+        display: flex;
+        align-items: center;
+        margin: 20px;
+    }
+  </style>
+
+</head>
+<body>
+    <header class="cabecalho">
+        <img class="cabecalho-imagem" src="imagem/icone-site.png" alt="logo do site">
+        <nav class="cabecalho-menu">
+          <a class="cabecalho-menu-item" href="index.html">Página Principal</a>
+          <a class="cabecalho-menu-item" href="protifolio.html">Portifólio TI</a>
+          <a class="cabecalho-menu-item" href="pequisa.html">Pesquisa  Acadêmica e Científica</a>
+        </nav>
+      </header>  
+    
+    <section class="capa">
+        <img id="imgCapa" src="imagem/logo1.svg">
+        <div>
+            <h1 id="text-titulo" class="typing-animation">Currículo <span> MONIQUE FRANÇA!</span></h1>
+            <br>
+        </div>
+
+    </section>
+    <section class="breveap">
+        <h2>Breve Apresentação</h2>
+        <figure><a><img src="imagem/eu.png" alt="Foto de monique perfil" id="fotoeu"></a></figure>
+        <p> Sou Monique, tenho 24 anos e casada. Sou graduada em Física - Licenciatura na Universidade Federal de Uberlândia (2018), graduada em Matemática - Licenciatura pelo Instituto Superior de Educação Ibituruna (Prominas)(2020) e graduada em Educação Especial e Pedagogia pela Universidade Santa Cecília (Unissanta)(2021). Mestre em Ciências na Universidade Federal de Uberlândia (2020). Atualmente estou no Programa de Pós-Graduação (stricto-sensu-doutorado) em Engenharia Biomédica da Universidade Federal de Uberlândia, e Bolsista da Capes. Área de pesquisa é sistemas computacionais e dispositivos aplicados à saúde, centrado no estudo de doses em Tomografias Computadorizadas. É integrante dos projetos de pesquisa "Dosimetria em tempo real de procedimentos de Radiologia Intervencionista empregando os Métodos de Monte Carlo e Machine Learning". </p>
+    </section>
+    <header>
+        <section class="academica">
+            <h2>Formação acadêmica e Titulação</h2>  
+                        
+            <aside>       
+                <figure><a><img src="imagem/formaeb.jpg" alt="foto de formatura" id="formaeb"></a></figure>
+            <h3>Ensino básico</h3>
+                <dl>
+                    <dt>Ensino Fundamental</dt>
+                        <dd><li> (2005-2010) - Escola Estadudal Luiz Balbino (EELB), Pirapora-MG</dd></li>
+                        <br>
+                    <dt>Ensino Médico Integrado</dt>
+                        <dd><li> (2011-2013) - Instituto Federal de Educação Ciência e Tecnologia do Norte de Minas Gerais (IFNMG), Pirapora-MG</dd></li>    
+                </dl></aside>
+                <br>
+            <aside>    
+            <h3>Curso técnico ou profissionalizante</h3>
+                <dl>
+                    <dt>Técnico em Administração</dt>
+                        <dd><li> (2011-2013) - Instituto Federal de Educação Ciência e Tecnologia do Norte de Minas Gerais (IFNMG), Pirapora-MG</dd></li>
+                        <br>
+                    <dt>Técnico em Recursos Humanos</dt>
+                        <dd><li> (2020-2021)  - Serviço Nacional de Aprendizagem Comercial (SENAC) - Santa Catarina-SC</dd></li>
+                        <br>
+                    <dt>Técnico em Desenvolvimento de Sistemas</dt>
+                        <dd><li> (Em andamento)  - Serviço Nacional de Aprendizagem Comercial (SENAC) - Uberlândia-MG</dd></li>
+                        <br>   
+                    <dt>Técnico em Tecnico em Logistica</dt>
+                        <dd><li> (2021-2022)  - Instituto Federal de Educação, Ciência e Tecnologia do Sul de Minas Gerais (IFSULDEMINAS)- Franca-SP</dd></li>            
+                </dl> 
+                <figure><a><img src="imagem/formatura2.jpg" alt="foto de formatura 2" id="fotoformatura2"></a></figure>    
+            </aside>
+                <aside>
+                    <figure><a><img src="imagem/formatura1 (1).jpg" alt="foto de formatura" id="formatura1"></a></figure>
+            <h3>Ensino Superior - Graduação</h3>
+                <dl>
+                    <dt>Licenciatura em Física</dt>
+                        <dd><li> (2014-2018) - Universidade Federal de Uberlândia (UFU), Uberlândia-MG </dd></li>
+                        <br>
+                    <dt>Licenciatura em Matemática</dt>
+                        <dd><li> (2018-2014) - Instituto Prominas Serviços Educacionais (PROMINAS), Minas Gerais</dd></li> 
+                        <br>
+                    <dt>Graduação em Educação Especial</dt>
+                        <dd><li> (2020-2021) - Universidade Santa Cecília (UNISANTA) </dd></li> 
+                        <br>  
+                    <dt>Graduação em Pedagogia</dt>
+                        <dd><li> (2021-2021) - Universidade Santa Cecília (UNISANTA) </dd></li> 
+                        <br>         
+                </dl> 
+                <br>
+            </aside>
+            <aside>
+            <h3>Pós-Graduação</h3>
+                <dl>
+                    <dt>Mestrado em Ciências</dt>
+                        <dd><li> (2018-2020) - Universidade Federal de Uberlândia (UFU), Uberlândia-MG </dd></li>
+                        <br>
+                    <dt>Doutorado em Ciências</dt>
+                        <dd><li> (em andamento) - Universidade Federal de Uberlândia (UFU), Uberlândia-MG </dd></li> 
+                </dl> 
+                <img src="imagem/academica_am.svg" alt="academica" id="acade">   
+                <br></aside>
+                <aside>
+                    <img src="imagem/Work-in progress-amico.svg" alt="pos" id="pos">   
+            <h3>Cursos Complementares</h3>
+                <dl>
+                    <dt>Aperfeiçoamento em Gestão Municipal Ambiental</dt>
+                        <dd> - Instituto de Ciências Agrárias da Universidade Federal de Minas Gerais (UFMG) - (180h)</dd>
+                    <br> 
+                    <dt>Acessibilidade e Tecnologia</dt>
+                        <dd> - Instituto Federal de Educação, Ciência e Tecnologia do Espírito Santo (IFES) - (60h)</dd>
+                    <br>
+                    <dt>Docência em EAD</dt>
+                        <dd> - Instituto Federal de Educação Ciência e Tecnologia do Norte de Minas Gerais (IFNMG) - (200h)</dd>
+                    <br>
+                    <dt>Auxiliar Pedagógico</dt>
+                        <dd> - Instituto Federal de Educação, Ciência e Tecnologia do Sul de Minas Gerais (IFSULDEMINAS) - (200h)</dd>
+                    <br>
+                    <dt>Aperfeiçoamento Formação continuada de professores</dt>
+                        <dd> - Instituto Federal de Educação Ciência e Tecnologia do Norte de Minas Gerais (IFNMG) - (180h)</dd>
+                    <br>
+                </dl> 
+            </aside>           
+        </section>
+    </header>
+    <header>
+        <section class="experiencia">
+            
+                <h2>Experiência Profissional</h2>
+            <aside>
+             
+            <dl>
+                <dt>Professora de Física</dt>
+                    <dd><li> (2016) - Escola Estadual Argelce Mota, Pirapora-MG </dd></li>
+                    <dd><li> (2018) -  Escola Estadual Professor Inácio Castilho, Uberlândia-MG </dd></li>
+                    <dd><li> (2019) - Escolas Estaduais Professor José Maria Pereira, Buritizeiro-MG </dd></li>
+                    <dd><li> (2019) -  Escolas Estaduais Professora Silvia de Alencar, Buritizeiro-MG </dd></li>
+                    <dd><li> (2020) -  Escola Estadual Argelce Mota, Pirapora-MG </dd></li>
+                    <dd><li> (2020) -  Escola Estadual Cidade Jardim, Pirapora-MG </dd></li>
+            </dl> 
+            <figure><a><img src="imagem/Teacher-bro.svg" alt="foto de professora" id="professora"></a></figure>
+        </aside>       
+        </section>
+    </header>
+    <footer>  
+    </footer>        
+</body>
+</html>

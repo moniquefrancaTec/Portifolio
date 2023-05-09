@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monique França</title>
+
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala:wght@400;700&display=swap');
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+    }
+
+    body {
+        font-size: 100%;
+        background: linear-gradient(68.15deg, #2F2325 16.62%, #8E5D52 85.61%);
+    }
+    /* Cabeçalho*/
+    
+    .cabecalho {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        padding: 24px;
+        background: linear-gradient(68.15deg, #2F2325 16.62%, #8E5D52 85.61%);
+        flex-wrap: wrap;
+  
+    }
+    .cabecalho:hover {
+        background: #2F2325;
+        transition: .5s;
+    } 
+    .cabecalho-imagem {
+        height: 72px;
+        border-radius: 50px;
+        
+    }
+    .cabecalho-menu {
+        display: flex;
+        gap: 32px;
+
+    }
+
+   .cabecalho-menu-item {
+       font-family: 'Sarala', sans-serif;
+       color: #FFF2E7;
+       font-weight: 400;
+       font-size: 23px
+    }
+    .cabecalho-menu-item:hover{
+        background: linear-gradient(68.15deg, #2F2325 16.62%, #8E5D52 85.61%);;
+        color:#FFF2E7;
+        transition: .5s;
+    }
+   
+    /* Capa inicial */
+    
+    .capa{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content:space-around;
+        background-color: #ffe4c4;
+        padding: 67px;
+        border-bottom: #2F2325 2px solid;
+        flex-wrap: wrap;
+    }
+
+    #text-titulo{
+        animation: typing 4s 1s normal infinite;
+        padding: 0;
+        margin-bottom: 0px;
+        border-radius: 0px;
+        font-size: 32px;
+        color:rgb(9, 9, 9);
+        align-items: center;
+        font-family: verdana, cursive;
+        white-space: nowrap;
+        overflow: hidden;
+   
+    }
+   @keyframes typing{
+        from{
+            width: 0;
+        }
+        to{
+            width: 25em;
+        }
+    }
+    #text-titulo span::after {
+        content: '|';
+        margin-left: 3px;
+        opacity: 1;
+        animation: pisca .7s infinite;
+    }
+    @keyframes pisca {
+        0%, 100% {
+        opacity: 1;
+        }
+        50% {
+        opacity: 0;
+        }
+    }
+
+    #imgCapa{
+        border-radius: 310px;
+    }
+
+    h1 span {
+        font-size: 44px;
+        color:#FF3E89;
+        font-weight: 600;
+    }
+    #sub-text{
+        animation: typing 4s 1s normal ;
+        align-items: center;
+        font-family: verdana, cursive;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    #sub-text span{
+        color:#FF3E89;
+        align-items: center;
+        font-size: 44px;
+    
+    }
+    /* quem sou */
+
+    h3{
+   
+        font-size: 30px;
+        display: flex;
+        margin-bottom: 30px;
+        margin-right: 150px;
+        border-bottom: 10px solid;
+        border-color: #F8A9B3;
+    }
+    .quemSou{
+        display: flex;
+        align-items: center;
+        justify-content:center;
+        padding: 100px;
+        background-color: #fffbfc;
+        border-bottom: #2F2325 2px solid;
+        flex: column wrap; 
+
+    }
+    .text-quemsou{
+        padding: 30px;
+        font-size: 25px;
+        text-justify: center;
+        text-align: justify;
+        margin-left: 30px;
+        flex-flow: column wrap;
+       
+ 
+    }
+    .curriculo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color:  rgb(247, 168, 179);
+        padding: 15px;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 50px;
+        color: rgb(9, 9, 9);
+        transition: 0.5s;
+        font-size: 22px;
+        font-weight: 700;
+        width: 15%;
+        margin-left: auto;
+        }
+    .curriculo:hover{
+            background-color:bisque;
+        }
+
+    /* Campo + trabalhos*/
+    #text-trabalhos{
+        background-color:bisque;
+        font-size: 35px;
+        text-justify: center;
+        text-align: center;
+        padding: 20px;
+        padding-top: 30px;
+
+    }
+    .trabalhos{
+        background-color: bisque;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+        flex-wrap: wrap;
+        border-bottom: #2F2325 2px solid;
+        
+        
+
+    }
+    figure {
+
+            display: flex;
+            flex-flow: column;
+            padding: 5px;
+            margin: 10px;
+            margin-left: 45px;
+            text-decoration: none;
+        }
+
+        figcaption {
+            color: rgb(12, 12, 12);
+            font: italic smaller sans-serif;
+            padding: 3px;
+            text-align: center;
+            text-decoration: none;
+        }
+        #fototi{
+            width: 400px;
+            height: 400px;
+            position: relative;
+            padding: 0px;
+            margin: 0px;
+        }
+        #fototi:hover{
+        background-color: black;
+        }
+        #fotoacademico{
+            width: 400px;
+            height: 400px;
+            position: relative;
+            padding: 0px;
+            margin: 0px;
+        }
+        #fotoacademico:hover{
+        background-color: black;
+        }
+        #fotodocencia{
+            width: 400px;
+            height: 400px;
+            position: relative;
+            padding: 0px;
+            margin: 0px;
+        }
+        #fotodocencia:hover{
+        background-color: black;
+        }
+        .leng{
+            text-decoration: none;
+            color: #2F2325;
+        }
+        /*mesagem*/
+        .mensg{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            background-color: #171718;
+            opacity: 0.5;
+        }
+        h4{
+            font-family: 'Sarala', sans-serif;
+            font-size: 20px;
+            margin: 20px;
+        }
+        form{
+            margin: 50px;
+            text-align: center;
+            padding: center;
+            background-color:#fffbfc ;
+            box-shadow:0  20px  30px  0  rgba( 0 , 0 , 0 , 0.2 ),  0  15px  40px  0  rgba( 0 , 0 , 0 , 0.19 );
+            opacity: 0.9;
+
+        }  
+        form label{
+            font-family: 'Sarala', sans-serif;
+            font-weight: 400;
+        }  
+        form input{
+            width: 80%;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #999;
+            outline: none;
+            font-size: 16px;
+        }
+        form input:focus{
+            border: 2px solid #171718;
+        }
+        form input:textarea{
+            border: 2px solid #171718;
+            border-radius: 20px;
+        }
+        #enviar{
+            background-color: rgb(247, 168, 179);
+            padding: 15px;
+            text-align: center;
+            text-decoration: none;
+            width: 10%;
+            border-radius: 50px;
+            color: white;
+            font-family: 'Sarala', sans-serif;
+            font-weight: 700;
+            transition: 0.5s;
+        }
+        #enviar:hover{
+            background-color:#2F2325;
+        }
+        
+        /*rodapé*/
+        
+        footer{
+            margin: 0px;
+            padding: 0px;
+            display: flex;
+            justify-content:center;
+            justify-items: center;
+            flex-direction: row-reverse;
+            flex-wrap: wrap;
+
+        }
+        #fotogmail{
+            width: 50px;
+            height: 50px;
+            padding-top: 10px;
+        }
+        #fotolattes{
+            width: 50px;
+            height: 50px;
+        }
+        #fotomdf{
+            width: 50px;
+            height: 50px;
+        }
+        #fotogithub{
+            width: 50px;
+            height: 50px;
+            padding-top: 10px;
+        }
+        li{
+            flex-flow: row wrap;
+            display: flex;
+        }
+        ul{
+
+            padding-top: 10px;
+            padding: center;
+            justify-content: center;
+            justify-items: center;
+        
+        }
+        .final{
+            display: flex;
+            justify-content: space-around;
+            margin-left: 700px;
+        }
+        
+
+    </style>
+</head>
+<body>
+
+    <header class="cabecalho">
+        <img class="cabecalho-imagem" src="imagem/icone-site.png" alt="logo do site">
+        <nav class="cabecalho-menu">
+          <a class="cabecalho-menu-item" href="curriculo.html">Currículo</a>
+          <a class="cabecalho-menu-item" href="protifolio.html">Portifólio TI</a>
+          <a class="cabecalho-menu-item" href="pequisa.html">Pesquisa  Acadêmica e Científica</a>
+        </nav>
+      </header>  
+    
+    <section class="capa">
+        <img id="imgCapa" src="imagem/logo1.svg">
+        <div>
+            <h1 id="text-titulo" class="typing-animation">Olá, sou <span> MONIQUE FRANÇA!</span></h1>
+            <br>
+            <h2 id="sub-text" class="typing-animation"> Bem-vindo ao mundo mágico da <br> <span> Física e Computação </span></h2>
+        </div>
+
+    </section>
+    <div id="wrap-quem">
+    <section class="quemSou">
+        <img id="img-quemsou" src="imagem/eu.png" alt="foto monique">
+        
+        <ul class="text-quemsou"> <h3>Quem sou?</h3>
+            <li>Sou Monique, tenho 26 anos e casada.</li><br>
+             <li>Sou  graduada em-- <strong> Física</strong>--  na Universidade Federal de Uberlândia, <strong>--Matemática--</strong>   pelo Instituto Superior de Educação Ibituruna, <strong>--Educação Especial e Pedagogia--</strong> pela Universidade Santa Cecília. <br></li>
+             <br><li><strong>Mestre em Ciências--</strong> na Universidade Federal de Uberlândia (2020).</li>
+             <br><li> Atualmente estou no Programa de <strong>--Doutorado</strong>-- em Engenharia Biomédica da Universidade Federal de Uberlândia, e  <strong>-Bolsista da Capes-.</strong> </li>
+             <br><li> Fazendo o curso <strong>--Tec.Desenvolvimento de Sistemas--</strong> no SENAC-MG</li>
+             <br>
+             <a class="curriculo" href="curriculo.html" target="_blank">Saiba Mais</a>
+        </ul>       
+    </section>
+    </div>
+    <h2 id="text-trabalhos">Conheça mais os meus trabalhos</h2>
+    <section class="trabalhos">
+        
+        
+            <figure>
+                <a href="protifolio.html"><img src="imagem/TI_am.svg" alt="Portifolio TI" id="fototi"></a>
+                     <figcaption><a class="leng" href="#">Portifólio TI</a></figcaption>
+            </figure>
+            <figure>
+                <a href="pequisa.html"><img src="imagem/academica_am.svg" alt="trabalhos Academico" id="fotoacademico"</a>
+                     <figcaption><a class="leng" href="pequisa.html">Trabalhos Acadêmicos e Cientifícos</a></figcaption>
+            </figure> 
+            <figure>
+                <a href="#"><img src="imagem/docencia.svg" alt="docencia" id="fotodocencia"</a>
+                     <figcaption><a class="leng" href="#">Docência</a></figcaption>
+            </figure>  
+        
+    </section>
+
+    <section class="mensg">
+        <form>
+            <h4>Deixe sua mensagem</h4>
+                <div>
+                    <label>Nome:</label>
+                    <input type="texto" name="nome" id="tnome">
+                </div>
+                <div>    
+                    <label>E-mail:</label>
+                    <input type="email" name="email" id="temail">
+                </div>
+                <div>
+                    <label>Mensagem:</label>
+                    <textarea name="msg" id="tmsg"cols="110" rows="10"></textarea>
+                </div>
+                <input id="enviar" type="button" onclick="alert('Mensagem Enviada com Sucesso!')" value="Enviar">  
+            
+        </form>
+    </section>
+</body>
+<footer>
+    <ul class="final">
+        <li><strong>Contato</strong></li>
+   
+    <ul>    
+        <li><a href="https://github.com/franca-monique" target="_blank"><img src="imagem/logogithub.png" alt="logo do github" id="fotogithub"></a>
+        </li>
+    </ul>    
+    <ul>    
+        <li>
+            <a href="https://www.meninasdafisica.com.br/" target="_blank"><img src="imagem/logomdf.png" alt="logo do Mdf" id="fotomdf"></a></li>
+    </ul>   
+    <ul>     
+            <li><a href="franca_monique@outlook.com" target="_blank"><img src="imagem/gmail.png" alt="logo do gmail" id="fotogmail"> </a>
+            </li>
+    </ul>
+    <ul>        
+            <li>
+                <a href=" http://lattes.cnpq.br/7655852081830556" target="_blank"><img src="imagem/lattes.png" alt="logo do lattes" id="fotolattes"></a>
+            </li>
+    </ul>        
+    </ul>
+    
+</footer>
+</html>

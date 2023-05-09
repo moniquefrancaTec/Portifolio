@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <h1>Contador simples</h1>
+        <div>
+            <form>
+                <div>
+                    <label>Inicio:</label>
+                    <input type="number" id="inicio">
+                </div>
+                <div>
+                    <label>Fim:</label>
+                    <input type="number" id="fim">
+                </div>
+                <div>
+                    <label>Passo:</label>
+                    <input type="number" id="passo">
+                </div>
+            </form>
+            <button onclick="contar ()" id="contar">Contar</button>
+        </div>
+        <p id="resultado"></p>
+    </section>
+</body>
+    <script>
+          var inicio = Number(window.document.getElementById('inicio').value)
+          var fim = Number(window.document.getElementById('fim').value)
+          var passo = Number(window.document.getElementById('passo').value)
+          function contar(){
+                document.getElementById("inicio").required = true;         
+}
+
+         
+    </script>
+</html>

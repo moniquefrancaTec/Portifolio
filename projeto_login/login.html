@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login ou cadastrar</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            background-image: radial-gradient(circle at 50% -20.71%, #008aff 0, #0083ff 6.25%, #007bff 12.5%, #5c72ff 18.75%, #8768ff 25%)
+         
+        }
+        .blocoprincipal{
+            background-image: radial-gradient(circle at 50% -20.71%, #008aff 0, #0083ff 6.25%, #007bff 12.5%, #5c72ff 18.75%, #8768ff 25%, #a55df5 31.25%, #bd51e7 37.5%, #d143d7 43.75%, #e133c6 50%, #ee20b4 56.25%, #f704a2 62.5%, #fd008f 68.75%, #ff007c 75%, #ff0069 81.25%, #ff0457 87.5%, #fe2045 93.75%, #f83233 100%);
+            box-shadow:0  20px  30px  0  rgba( 0 , 0 , 0 , 0.2 ),  0  15px  40px  0  rgba( 0 , 0 , 0 , 0.19 );
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            border-radius: 20%;
+            margin: 50px;
+            text-align: center;
+
+            flex-wrap: wrap;          
+        }
+        form{
+            display: flex;
+           align-content: center;
+           justify-content: center;
+           flex-direction: column;
+           width: 500px;
+           align-items: center;
+           border-radius: 10px;
+           padding: 20px;
+           margin-bottom: 25px;
+        }
+        form input{
+            width: 80%;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #999;
+            outline: none;
+            font-size: 16px;
+        }
+        form input:focus{
+            border: 2px solid #1877f2;
+        }
+        .login{
+            background-color: #90278E;
+            padding: 15px;
+            text-align: center;
+            text-decoration: none;
+            width: 50%;
+            border-radius: 50px;
+            color: white;
+            font-family: 'Arial';
+            font-weight: 700;
+            transition: 0.5s;
+        }
+        .login:hover{
+            background-color:#0083ff;
+        }
+        .esqueceu{
+            margin: 15px 0;
+            text-decoration: none;
+            color:white;
+            font-family: 'Arial';
+            font-size: 14px;
+        }
+        .novaconta{
+            margin: 15px 0;
+            text-decoration: none;
+            color:white;
+            font-family: 'Arial';
+            font-size: 14px;
+        }
+        
+        @media(max-width:500px){
+        form{
+        width: 350px;
+        align-content:center ;
+        align-items: center;
+    }
+}
+    </style>
+</head>
+<body>
+    <section class="blocoprincipal"> <!--Container principal-->
+           <img src="imagem/academica_am.svg" alt="academica" id="academica">
+           <form action="">
+               <input type="text" placeholder="Email ou telefone">
+               <input type="password" placeholder="Senha">
+               <a class="login" href="">Entrar</a>
+               <a class="esqueceu"href="">Esqueceu a senha?</a>
+               <section>
+                   <a class="novaconta" href="">Criar nova conta</a>
+               </section>
+            </form>
+        </section>
+       </section>
+   </body>
+   </html>

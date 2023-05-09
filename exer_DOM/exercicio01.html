@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 01</title>
+    <style>
+        *{
+            justify-content: center;
+            align-items: center;
+
+        }    
+        body{
+            background-color:black ;
+        }
+        .box{
+            background-color:antiquewhite ;
+            display: flex;
+            flex-direction: column;
+            margin-top: 350px;
+
+
+        }
+        h1{
+            background-color: aliceblue;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        div{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        section{
+            display: flex;
+             align-items: center;
+             margin: 20px;
+        }
+        #bloco1{
+            background-color: aqua;
+            margin: 20px;
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+        }
+        #bloco2{
+            background-color: blueviolet;
+            margin: 20px;
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+        }
+        #bloco3{
+            background-color:chocolate;
+            margin: 20px;
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <section class="box">
+    <h1> Exercício sobre Dom - Desafio criar 3 blocos e mensagens que mudam de cor</h1>
+    <div>
+    <section id="bloco1">
+       <p id= reescrita1>Clique para que o bloco do lado mude de cor!</p>
+    </section>   
+    <section id="bloco2">
+        <p id= reescrita2> Clique para que o bloco do lado mude de cor!</p>   
+    </section>    
+    <section id="bloco3" >
+        <p id= reescrita3> Clique para que o primeiro bloco do lado mude de cor!</p>   
+    </section>
+    </div>
+    <div>
+        <button id="resert" onclick="Resertar()">Resertar</button>
+    </div>
+</section>
+    <script>
+        {
+        document.getElementById('bloco2')
+        bloco1.addEventListener('click',clicar)
+        function clicar (){
+            bloco2.style.background= 'red'
+            reescrita1.innerHTML = "Já foi clicado"
+
+        }
+        }
+
+        {
+        document.getElementById('bloco3')
+        bloco2.addEventListener('click',clicar)
+        function clicar (){
+            bloco3.style.background= 'green'
+            reescrita2.innerHTML = "Já foi clicado"
+
+        }
+        }
+
+        {
+        document.getElementById('bloco1')
+        bloco3.addEventListener('click',clicar)
+        function clicar (){
+            bloco1.style.background= 'blue'
+            reescrita3.innerHTML = "Já foi clicado"
+
+        }
+        }
+        {
+        var resert = document.getElementById('resert')
+        function Resertar(){
+            bloco1.style.background= 'aqua'
+            reescrita1.innerHTML = 'Clique para que o bloco do lado mude de cor!'
+            bloco2.style.background= 'blueviolet'
+            reescrita2.innerHTML = 'Clique para que o bloco do lado mude de cor!'
+            bloco3.style.background='chocolate'
+            reescrita3.innerHTML ='Clique para que o primeiro bloco do lado mude de cor!'
+
+        }
+        }
+       </script>
+</body>
+   
+
+</html>

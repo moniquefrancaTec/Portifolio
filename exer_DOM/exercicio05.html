@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercado</title>
+    <style>
+        
+        form{
+           background-color: antiquewhite;
+            display: flex;
+           align-content: center;
+           justify-content: center;
+           flex-direction: column;
+           width: 500px;
+           align-items: center;
+           border-radius: 10px;
+           padding: 20px;
+           margin-bottom: 25px;
+        }
+        label{
+            font-family: 'Arial';
+            font-weight: 700;
+        }
+        form input{
+            width: 80%;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #999;
+            outline: none;
+            font-size: 16px;
+        }
+        form input:focus{
+            border: 2px solid #1877f2;
+        }
+        button
+        {
+            background-color: #f1ecf1;
+            padding: 10px;
+            text-align: center;
+            text-decoration: none;
+            width: 30%;
+            justify-items: center;
+            border-radius: 20px;
+            color: rgb(15, 15, 15);
+            font-family: 'Arial';
+            font-weight: 700;
+            transition: 0.5s;
+        }
+        p{
+            background-color: antiquewhite;
+            font-family: 'Arial';
+            font-weight: 700;
+            width: 500px;
+           align-items: center;
+           border-radius: 10px;
+           padding: 20px;
+           margin-bottom: 25px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Cálculo dos gastos</h1>
+    <section>
+        <form>
+            <div>
+            <label>Total da Compra:</label>
+            <input type="number" id="total">
+            </div>
+            <div>
+            <label>Preço Pago:</label>
+            <input type="number" id="pago">
+            </div>
+        </form>
+        <button  onclick="troco()" id="calcular">Calcular</button>
+        <p id ="resultado"></p>
+    </section>
+</body>
+    <script>
+        function troco(){
+            var total = Number(window.document.getElementById('total').value)
+            var pago = Number(window.document.getElementById('pago').value)
+
+            if (total<0){
+                window.alert(`O total da compra não pode ser negativo! Digite um outro valor!`)
+            } if (pago<0){
+                window.alert(`O valor pago não pode ser negtivo! Digite um outro valor!`)
+            } if (pago < total){
+                var troco = (total - pago)
+                resultado.innerHTML = ` Não tem troco! Ainda falta pagar R$ ${troco}`
+                resultado.style.color ='blue'
+            } else if (pago => total){
+                var troco = (pago - total)
+                resultado.innerHTML = ` O valor do troco é R$ ${troco}`
+                resultado.style.color ='blue'
+            }
+        }
+    </script>
+</html>

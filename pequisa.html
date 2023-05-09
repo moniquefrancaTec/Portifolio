@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisa</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala:wght@400;700&display=swap');
+   
+   * {
+       margin: 0;
+       padding: 0;
+       box-sizing: border-box;
+       text-decoration: none;
+       scroll-behavior: smooth;
+   }
+   
+   body {
+       font-size: 100%;
+      background-color:  #0f0f0f;
+   }
+   /* Cabeçalho*/
+   
+   .cabecalho {
+       display: flex;
+       flex-direction: row;
+       align-items: center;
+       justify-content: space-around;
+       padding: 24px;
+       background: linear-gradient(68.15deg, #2F2325 16.62%, #8E5D52 85.61%);
+       flex-wrap: wrap;
+   
+   }
+   .cabecalho:hover {
+       background: #2F2325;
+       transition: .5s;
+   } 
+   .cabecalho-imagem {
+       height: 72px;
+       border-radius: 50px;
+       
+   }
+   .cabecalho-menu {
+       display: flex;
+       gap: 32px;
+   
+   }
+   
+   .cabecalho-menu-item {
+      font-family: 'Sarala', sans-serif;
+      color: #FFF2E7;
+      font-weight: 400;
+      font-size: 23px
+   }
+   .cabecalho-menu-item:hover{
+       background: linear-gradient(68.15deg, #2F2325 16.62%, #8E5D52 85.61%);;
+       color:#FFF2E7;
+       transition: .5s;
+   }
+   
+   /* Capa inicial */
+   
+   .capa{
+       display: flex;
+       flex-direction: row-reverse;
+       align-items: center;
+       justify-content:space-around;
+       background-color: #111111;
+       padding: 25px;
+       flex-wrap: wrap;
+   }
+   
+   #text-titulo{
+       animation: typing 4s 1s normal;
+       padding: 0;
+       margin-bottom: 0px;
+       border-radius: 0px;
+       font-size: 32px;
+       color:rgb(245, 239, 239);
+       align-items: center;
+       font-family: verdana, cursive;
+       white-space: nowrap;
+       overflow: hidden;
+   
+   }
+   @keyframes typing{
+       from{
+           width: 0;
+       }
+       to{
+           width: 25em;
+       }
+   }
+   #text-titulo span::after {
+       content: '|';
+       margin-left: 3px;
+       opacity: 1;
+       animation: pisca .7s infinite;
+   }
+   @keyframes pisca {
+       0%, 100% {
+       opacity: 1;
+       }
+       50% {
+       opacity: 0;
+       }
+   }
+   
+   #imgCapa{
+       border-radius: 310px;
+       width: 150px;
+   }
+
+   /*coteudo do site*/
+
+   .box{
+    background-color: #FFF2E7;
+   }
+
+   .box1{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: white;
+    margin: 10px;
+   }
+   .box1 h2{
+    font-size: 32px;
+    margin-top: 20px;
+   }
+   .box1 img{
+     width: 700px;
+     height: auto;
+     margin: 20px;
+   }
+   .box1 p{
+    text-align: justify;
+    margin: 50px;
+    margin-top: 30px;
+    font-size: 26px;
+    line-height: 35px;
+   }
+   .box1 a{
+      list-style: none;
+      color: brown;
+      font-size: 25px;
+   }
+  
+   .divi-text{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFF2E7;
+    margin: 10px;
+    width: 98vw;
+    min-height: 98vh;
+    height: auto;
+
+   }
+
+    .box2, .box3{
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+   }
+
+   #linha{
+    content: '';
+    padding: 600px 2px;
+    background-color: #0f0f0f;
+    opacity: 0.4;
+   }
+
+   #mdf{
+    width: 430px;
+    margin-bottom: 20px;
+   }
+   .box2 h2{
+    font-size: 32px;
+    margin: 0px 50px 30px 50px;
+    text-align: center;
+   }
+
+   .box2 p{
+    text-align: justify;
+    margin: 10px 50px 20px 50px;
+    font-size: 26px;
+    line-height: 34px;
+   }
+   .box2 a{
+      list-style: none;
+      color: brown;
+      font-size: 25px;
+   }
+   .box3 h2{
+    font-size: 32px;
+    margin: -80px 50px 30px 50px;
+    text-align: center;
+   }
+   .box3 p{
+    text-align: justify;
+    margin: 30px 50px 20px 50px;
+    font-size: 26px;
+    line-height: 34px;
+   }
+   .box3 img{
+     width: 420px;
+   }
+   .box3 a{
+      list-style: none;
+      color: brown;
+      font-size: 25px;
+   }
+   .box4{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: white;
+    margin: 10px;
+   }
+   .box4 h2{
+    font-size: 32px;
+    margin: 50px;
+   }
+   .box4 img{
+     width: 700px;
+     height: auto;
+     margin: 20px;
+   }
+   .box4 p{
+    text-align: justify;
+    margin: 50px;
+    margin-top: 30px;
+    font-size: 26px;
+    line-height: 35px;
+   }
+   .box4 a{
+      list-style: none;
+      color: brown;
+      font-size: 25px;
+   }
+
+   #subir{
+    cursor: pointer;
+    position: fixed;
+    justify-content: space-around;
+    bottom: 10px;
+    left: 1;
+    right: 0;
+    background-color: aliceblue;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 33px;
+    margin: 0px 10px;
+    border: black 2px solid;
+    color: black;
+   }
+   .box5{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #FFF2E7;
+    margin: 10px;
+   }
+   </style>
+</head>
+<body>
+    <header class="cabecalho">
+        <img class="cabecalho-imagem" src="imagem/icone-site.png" alt="logo do site">
+        <nav class="cabecalho-menu">
+          <a class="cabecalho-menu-item" href="index.html">Página Principal</a>
+          <a class="cabecalho-menu-item" href="protifolio.html">Portifólio TI</a>
+          <a class="cabecalho-menu-item" href="curriculo.html">Currículo</a>
+        </nav>
+      </header>  
+    
+    <section class="capa">
+        <img id="imgCapa" src="imagem/logo1.svg">
+        <div>
+            <h1 id="text-titulo" class="typing-animation">Catálogo de Trabalhos Acadêmicos <br> e Científicos <span> MONIQUE FRANÇA!</span></h1>
+            <br>
+        </div>
+    </section>
+    <section class="box1">
+        
+        <h2>Modelos didáticos para ensino inclusivo de física nuclear</h2>
+        
+            <a href="https://seer.ufu.br/index.php/revextensao/article/view/60479/33208" target="_blank"><img src="imagem/nuclear.png"></a>
+        
+        <p>Diante do cenário de ausência e superficialidade  do ensino de Física Nuclear, preconceitos e mitos  sobre  o  tema  em  questão  e  escassez  de  materiais  didáticos  voltados  para  alunos  com deficiência, opresente trabalho traz a ação extensionista na construção e aplicação de material didático para  o   ensino  e  divulgação   científica  dos  conceitos  de  energia  nuclear.  Seu diferencial é o caráter tátil das maquetes, com detalhes em relevos e texturas trabalhadas com o  intuito  de  possibilitar  o  ensino  a  alunos  com  deficiência  visual.  O  material  segue a cronologia  do  emprego  da  energia  nuclear  para  fins  bélicos,  apresentando  os  processos  de fusão e fissão nuclear e, posteriormente, as diferentes bombas criadas e utilizadas ao longo da Segunda Guerra Mundial e do período da Guerra Fria. Finaliza com o esquema de uma usina termonuclear,  apresentando  a  geração  de  energia  elétrica  a  partir  de  processos  nucleares.  O trabalho  foi  aplicado  em  um  evento  de  divulgação  científica  que  contava  com  a  presença  de alunos  com  e  sem  deficiência  visual,  que  interagiram  e aprenderam  a  partir  do  material elaborado.Por  fim,  essas  ações  contribuíram  para  a  formação  dos  alunos  da  graduação envolvidos no projeto.</p><a href="https://seer.ufu.br/index.php/revextensao/article/view/60479/33208" target="_blank">Saiba mais</a>
+    
+    </section>
+    <section class="divi-text">
+    <section class="box2">
+    <h2> As ações extensionistas do programa 'Meninas da Física' durante a pandemia da Covid-19.</h2>
+    
+        <a  href="https://seer.ufu.br/index.php/revextensao/article/view/63009/32852" target="_blank"></a>
+            
+    <p>Com  a  pandemia  do  Covid-19,  as  recomendações  de  distanciamento  social  e  prevenção  à saúde,  o  uso  das redes  sociais aumentou  significativamente.  O programa  de  extensão “Meninas  da  Física”,  durante  a  pandemia,  encontrou  desafios  para  continuar  as  atividades presenciais  do  programa,  tendo  que  adaptá-las  para  encontros  remotos,  com  a  utilização  de recursos  tecnológicos  e  das redes  sociais.  Este  trabalho  apresentará  os  encontros  on-line realizados com o intuito de promover ações de ensino e de divulgação científica, destacando os  avanços  científicos  devido  às  pesquisas  realizadas  por  mulheres  engajadas  na  ciência.</p><a href="https://seer.ufu.br/index.php/revextensao/article/view/63009/32852" target="_blank">Saiba mais</a>
+</section>
+<div id="linha"></div>
+    <section class="box3">
+        <h2> Trilha da Radioatividade.</h2>
+        <div>
+            <a href="https://drive.google.com/file/d/1b8iDzrpC-F4Kscf-WYcHdwEOTgNLs9re/view" target="_blank"><img src="imagem/trilha.png"></a>
+        </div>
+        <p>Temos aqui um pequeno “manual”
+            para professores, alunos e comunidade
+            que queiram realizar a Trilha da
+            Radioatividade, e assim se divertir e
+            aprender um pouco sobre a grande e
+            ilustre história da radioatividade e suas
+            aplicações.
+            Durante o Manual, deixamos alguns
+            QR codes como este mostrado abaixo, o
+            qual pode ser lido com o seu celular.
+            Neles há as referências de imagens
+            utilizadas e também outros conteúdos
+            extras que você pode aprender. Os links
+            também estão escritos na seção
+            "Bibliografia das imagens".</p><a href="https://seer.ufu.br/index.php/revextensao/article/view/63009/32852" target="_blank">Saiba mais</a>
+    </section>
+    </section>
+    <section class="box4">
+        <div>
+            <h2> Metodologias Ativas de Ensino como Ação Afirmativa no
+                Combate à Retenção na Disciplina Fundamentos de Mecânica.</h2>
+            <div>
+                <a href="https://repositorio.ufu.br/bitstream/123456789/26500/4/MetodologiasAtivasEnsino.pdf" target="_blank"><img src="imagem/tcc.png"></a>
+            </div>
+            <p>Este trabalho tem o intuito de investigar o processo de ensino– aprendizagem
+                dos alunos na disciplina de Física I (Mecânica Newtoniana) de diversos cursos das áreas
+                de Engenharias e Ciências Exatas da Universidade Federal de Uberlândia, submetidos a
+                duas metodologias distintas: tradicional e ativa, onde aspectos relacionados ao sistema de
+                ingresso com modalidades de cotas foram abordados. As avaliações da disciplina foram
+                usadas como parâmetro para analisar como as metodologias podem modificar as
+                concepções alternativas dos alunos e se existe uma relação entre desempenho e
+                modalidades de ingresso (Lei das Cotas). Pelo método estatístico do teste qui quadrado,
+                os resultados obtidos mostraram que existe um hiato entre os alunos cotistas e da ampla
+                concorrência, desde a nota de corte do SISU até o desempenho acadêmico. Porém os
+                resultados mostram que as metodologias ativas, além de permitirem um melhor ganho de
+                aprendizagem em relação às metodologias tradicionais, podem promover uma igualdade
+                de condições para os estudantes que chegam com dificuldades, independente da
+                modalidade de entrada no ensino superior. Além disso foi escolhido 2 cursos para a
+                aplicação do teste padronizado FCI, em duas etapas, para analisar e investigar o
+                desempenho conceitual dos alunos em função da modalidade de ingresso e das
+                metodologias de ensino (ativa ou tradicional). </p><a href="https://repositorio.ufu.br/bitstream/123456789/26500/4/MetodologiasAtivasEnsino.pdf" target="_blank">Saiba mais</a>
+        </div>
+    </section>
+    
+  <a href="#" id="subir">&uarr;</a>
+</body>
+</html>
